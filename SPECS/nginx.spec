@@ -78,7 +78,7 @@ do
     test -d $d || mkdir -p $d
 done
 
-echo "# Create Nginx temp dir on /dev/shm/nginx"    >> /etc/rc.local
+echo "# Create Nginx temp dir: /dev/shm/nginx"    >> /etc/rc.local
 echo "test -d %{ngx_tmp} || mkdir %{ngx_tmp}"       >> /etc/rc.local 
 
 %files
